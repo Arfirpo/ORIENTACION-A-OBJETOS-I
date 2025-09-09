@@ -5,9 +5,9 @@ public class Producto {
 	private Double precioPorKilo;
 	private String descripcion;
 
-	public Producto(Double peso, Double ppk, String desc) {
+	public Producto(String desc, Double peso, Integer ppk) {
 		this.setPeso(peso);
-		this.setPrecioPorKilo(ppk);
+		this.setPrecioPorKilo(ppk.doubleValue());
 		this.setDescripcion(desc);
 	}
 
@@ -23,6 +23,10 @@ public class Producto {
 		this.precioPorKilo = precioPorKilo;
 	}
 
+	public void setPrecioPorKilo(Integer precioPorKilo){
+		this.precioPorKilo = precioPorKilo.doubleValue();
+	}
+
 	public String getDescripcion() {
 		return descripcion;
 	}
@@ -36,8 +40,7 @@ public class Producto {
 	}
 
 	public Double getPrecio() {
-		int kilos = this.getPeso().intValue();
-		return kilos * this.getPrecioPorKilo();
+		return this.getPrecioPorKilo() * this.getPeso();
 	}
 
 }
