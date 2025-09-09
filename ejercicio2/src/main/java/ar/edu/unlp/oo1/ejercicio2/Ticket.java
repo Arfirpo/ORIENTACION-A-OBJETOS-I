@@ -1,16 +1,26 @@
 package ar.edu.unlp.oo1.ejercicio2;
 
-public class Balanza {
-	private Integer cantidadDeProductos;
-	private Double precioTotal;
-	private Double pesoTotal;
+import java.time.LocalDate;
 
-	public Balanza() {
-		this.ponerEnCero();
+public class Ticket {
+	private LocalDate fecha;
+	private Integer cantidadDeProductos;
+	private Double pesoTotal;
+	private Double precioTotal;
+
+	public Ticket(Integer cantProd, Double pesoTot, double precioTot) {
+		this.setFecha();
+		this.setCantidadDeProductos(cantProd);
+		this.setPesoTotal(pesoTot);
+		this.setPrecioTotal(precioTot);
 	}
 
 	public void setCantidadDeProductos(Integer cantidadDeProductos) {
 		this.cantidadDeProductos = cantidadDeProductos;
+	}
+
+	public void setFecha() {
+		this.fecha = LocalDate.now();
 	}
 
 	public void setPesoTotal(Double pesoTotal) {
@@ -25,6 +35,10 @@ public class Balanza {
 		return cantidadDeProductos;
 	}
 
+	public LocalDate getFecha() {
+		return fecha;
+	}
+
 	public Double getPesoTotal() {
 		return pesoTotal;
 	}
@@ -33,19 +47,8 @@ public class Balanza {
 		return precioTotal;
 	}
 
-	public void ponerEnCero() {
-		this.cantidadDeProductos = 0;
-		this.precioTotal = 0.0;
-		this.pesoTotal = 0.0;
+	public double impuesto() {
+		return this.getPrecioTotal() * 0.21;
 	}
 
-	public void agregarProducto(Producto prod) {
-		this.cantidadDeProductos++;
-		this.precioTotal += prod.getPrecio();
-
-	}
-
-	public void emitirTicket(){
-		
-	}
 }
