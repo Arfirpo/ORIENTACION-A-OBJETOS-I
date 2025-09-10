@@ -7,7 +7,7 @@
 	<groupId>ar.edu.unlp.oo1</groupId>
 	<artifactId>ejercicio2</artifactId>
 	<version>1.0.0</version>
-	<name>ejercicio-balanza-electronica</name>
+	<name>2-Balanza Electronica</name>
 	<packaging>jar</packaging>
 	<description>Ejercicio 2 balanza electronica</description>
 	<properties>

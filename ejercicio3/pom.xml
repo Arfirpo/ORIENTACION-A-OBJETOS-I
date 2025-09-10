@@ -7,7 +7,7 @@
 	<groupId>ar.edu.unlp.oo1</groupId>
 	<artifactId>ejercicio3</artifactId>
 	<version>1.0.0</version>
-	<name>ejercicio-presupuestos</name>
+	<name>3-Presupuestos</name>
 	<packaging>jar</packaging>
 	<description>Ejercicio 3 Presupuestos</description>
 	<properties>
