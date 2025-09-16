@@ -1,0 +1,22 @@
+*aplicación móvil
+*inversor
+++agregar inversion
+++quitar inversión
+*inversiones
+-Inversión  en acciones
++nombre
++cantidad de acciones
++valor unitario
+-valor actual: se calcula multiplicando el valor unitario de  una  acción por la cantidad de acciones que se posee
+-inversión en plazo fijo
+valor actual  de cada inversión
+valor actual de las inversiones del Inversor
+*acciones
++nombre
++valor unitario
+*plazo fijo
++monto depositado
++fecha constitución
++interes diario
+
++invesrion actual: suma de los valores actuales de todas  las  inversiones  que  posee.
