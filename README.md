@@ -3,4 +3,4 @@ En este repositorio se almacenaran la consignas y los enunciados resueltos de la
 
 ## Cuadernillo de actividades  - ultima actualización: 
 
-8 de septiembre de 2025
+18 de septiembre de 2025
