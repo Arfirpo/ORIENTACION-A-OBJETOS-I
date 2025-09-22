@@ -39,7 +39,6 @@ Tareas:
 -usuarios.
 -nombre.
 -domicilio.
--emision de factura
 -factura.
 -ultimo consumo registrado.
 -cuadro tarifario.
