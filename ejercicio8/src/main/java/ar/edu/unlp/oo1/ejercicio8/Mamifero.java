@@ -1,7 +1,6 @@
 package ar.edu.unlp.oo1.ejercicio8;
 
 import java.time.LocalDate;
-
 public class Mamifero {
   private String identificador;
   private String especie;
@@ -95,35 +94,22 @@ public class Mamifero {
 
   public boolean tieneComoAncestroA(Mamifero unMamifero) {
     boolean esta = false;
-    if (this.getPadre() != null || this.getMadre() != null)
-      return tieneComoAncestroA(this, unMamifero, esta);
-    else
-      return false;
-  }
 
-  private boolean tieneComoAncestroA(Mamifero otroMAmifero, Mamifero unMamifero, boolean esta) {
+    if (this.getPadre() != null)
+      esta = esAncestro(this.getPadre(), unMamifero);
 
-    if (this.getPadre().equals(unMamifero)
-        || this.getMadre().equals(unMamifero))
-      esta = true;
-
-    else {
-
-      if (this.getMadre() != null && !esta) {
-        if (!this.getMadre().equals(unMamifero)) {
-          esta = tieneComoAncestroA(this.getMadre(), unMamifero);
-        }
-      }
-
-      if (this.getPadre() != null && !esta) {
-        if (!this.getPadre().equals(unMamifero)) {
-          esta = tieneComoAncestroA(this.getPadre(), unMamifero);
-        }
-      }
-
-    }
+    if (!esta && this.getMadre() != null)
+      esta = esAncestro(this.getMadre(), unMamifero);
 
     return esta;
+
+  }
+
+  private boolean esAncestro(Mamifero ancestro, Mamifero unMamifero) {
+
+    if (ancestro.equals(unMamifero))
+      return true;
+     return ancestro.tieneComoAncestroA(unMamifero);
   }
 
 }
