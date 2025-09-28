@@ -120,6 +120,4 @@ public class Mamifero {
     return(ancestro.equals(unMamifero) || ancestro.tieneComoAncestroA(unMamifero));
   }
 
-
-
 }
