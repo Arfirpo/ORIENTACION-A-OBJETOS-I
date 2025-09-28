@@ -1,0 +1,29 @@
+1.  Liste  todos  los  métodos,  indicando  nombre  y  clase,  que  son  ejecutados  como  resultado del envío del último mensaje de cada fragmento de código.
+
+
+  Instanciación: Gerente alan = new Gerente("Alan Turing");
+
+  a) Instrucción: double aportesAlan = alan.aportes();
+
+  lista de metodos:
+
+    a- metodo "aportes" de la clase Gerente.
+    b. metodo "montoBasico" de la clase Gerente.
+
+
+  b) Instrucción: double sueldoBasicoAlan = alan.sueldoBasico();
+
+  lista de metodos:
+
+    a- metodo "sueldoBasico" de la clase Empleado Jerarquico;
+    b- metodo "sueldoBasico" de la clase Empleado;
+    c- metodo "montoBasico" de la clase Gerente.
+    d- metodo "aportes" de la clase Gerente.
+    e- metodo "montoBasico" de la clase Gerente.
+    f- metodo "bonoPorCategoria" de la clase Empleado Jerarquico.
+
+
+2.  ¿Qué valores tendrán las variables aportesDeAlan y sueldoBasicoDeAlan luego de ejecutar cada fragmento de código? 
+
+  a) aportes de alan: $2.850;
+  b) sueldoBasicoDeAlan: $67.800;
