@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ar.edu.unlp.oo1</groupId>
-  <artifactId>ejercicio09</artifactId>
+  <artifactId>ejercicio11</artifactId>
   <version>0</version>
   <packaging>jar</packaging>
-  <name>09-Red de Alumbrado</name>
+  <name>11-Cuenta con Ganchos</name>
   <description>Este arquetipo es usado para objetos I y II</description>
 
   <licenses>
@@ -57,7 +57,7 @@
 						<configuration>
 							<archive>
 								<manifest>
-									<mainClass>ar.edu.unlp.oo1.ejercicio4.Ejercicio9Application</mainClass>
+									<mainClass>ar.edu.unlp.oo1.ejercicio10.Ejercicio11Application</mainClass>
 								</manifest>
 							</archive>
 							<descriptorRefs>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ar.edu.unlp.oo1.ejercicio6</groupId>
-  <artifactId>ejercicio8</artifactId>
+  <groupId>ar.edu.unlp.oo10</groupId>
+  <artifactId>ejercicio08</artifactId>
   <version>0</version>
   <packaging>jar</packaging>
-  <name>8-Genealogia Salvaje</name>
+  <name>08-Genealogia Salvaje</name>
   <description>Este arquetipo es usado para objetos I y II</description>
 
   <licenses>

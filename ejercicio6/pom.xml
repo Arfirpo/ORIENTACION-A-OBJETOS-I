@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ar.edu.unlp.oo1.ejercicio6</groupId>
-  <artifactId>ejercicio6</artifactId>
+  <groupId>ar.edu.unlp.oo1</groupId>
+  <artifactId>ejercicio06</artifactId>
   <version>0</version>
   <packaging>jar</packaging>
-  <name>6-Distribuidora Electrica</name>
+  <name>06-Distribuidora Electrica</name>
   <description>Este arquetipo es usado para objetos I y II</description>
 
   <licenses>
@@ -57,7 +57,7 @@
 						<configuration>
 							<archive>
 								<manifest>
-									<mainClass>ar.edu.unlp.oo1.ejercicio4.Ejercicio5Application</mainClass>
+									<mainClass>ar.edu.unlp.oo1.ejercicio4.Ejercicio6Application</mainClass>
 								</manifest>
 							</archive>
 							<descriptorRefs>

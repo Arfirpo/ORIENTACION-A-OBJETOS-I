@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ar.edu.unlp.oo1</groupId>
-	<artifactId>ejercicio1-wallpost</artifactId>
+	<artifactId>ejercicio01</artifactId>
 	<version>1.0.0</version>
-	<name>1-Wallpost</name>
+	<name>01-Wallpost</name>
 	<packaging>jar</packaging>
-	<description>Ejercicio 1 Wallpost</description>
+	<description>Ejercicio 01 Wallpost</description>
 	<properties>
 		<java.version>21</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

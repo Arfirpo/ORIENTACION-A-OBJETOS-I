@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ar.edu.unlp.oo1</groupId>
-	<artifactId>ejercicio2</artifactId>
+	<artifactId>ejercicio02</artifactId>
 	<version>1.0.0</version>
-	<name>2-Balanza Electronica</name>
+	<name>02-Balanza Electronica</name>
 	<packaging>jar</packaging>
-	<description>Ejercicio 2 balanza electronica</description>
+	<description>Ejercicio 02 balanza electronica</description>
 	<properties>
 		<java.version>21</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
