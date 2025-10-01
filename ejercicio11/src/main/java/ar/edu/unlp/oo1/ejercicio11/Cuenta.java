@@ -3,32 +3,32 @@ package ar.edu.unlp.oo1.ejercicio11;
 public abstract class Cuenta {
   private double saldo;
 
-  public  Cuenta(){
+  public Cuenta(double saldo) {
     this.saldo = 0;
   };
 
-  public double getSaldo(){
+  public double getSaldo() {
     return this.saldo;
   }
 
-  public void depositar(double monto){
+  public void depositar(double monto) {
     this.saldo += monto;
   }
 
-  public boolean extraer(double monto){
-    if(this.puedeExtraer(monto)){
+  public boolean extraer(double monto) {
+    if (this.puedeExtraer(monto)) {
       this.extraerSinControlar(monto);
       return true;
     }
     return false;
   }
 
-  protected void extraerSinControlar(double monto){
+  protected void extraerSinControlar(double monto) {
     this.saldo -= monto;
   }
 
-  public boolean transferirACuenta(double monto, Cuenta cuentaDestino){
-    if(this.puedeExtraer(monto)){
+  public boolean transferirACuenta(double monto, Cuenta cuentaDestino) {
+    if (this.puedeExtraer(monto)) {
       this.extraerSinControlar(monto);
       cuentaDestino.depositar(monto);
       return true;
@@ -36,7 +36,5 @@ public abstract class Cuenta {
     return false;
   }
 
-  protected boolean puedeExtraer(double monto){
-    return monto <= this.saldo;
-  }
+  protected abstract boolean puedeExtraer(double monto);
 }

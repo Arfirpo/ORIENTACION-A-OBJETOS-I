@@ -3,9 +3,9 @@ package ar.edu.unlp.oo1.ejercicio11;
 public class CuentaCorriente extends Cuenta {
   private double descubierto;
 
-  public CuentaCorriente(double desc){
-    super();
-    this.setDescubierto(desc);
+  public CuentaCorriente(double desc, double saldo) {
+    super(saldo);
+    this.setDescubierto(0);
   }
 
   public void setDescubierto(double descubierto) {
@@ -16,5 +16,9 @@ public class CuentaCorriente extends Cuenta {
     return descubierto;
   }
 
+  @Override
+  protected boolean puedeExtraer(double monto) {
+    return Math.abs(this.getSaldo() - monto) <= this.descubierto;
+  }
 
 }
