@@ -10,7 +10,6 @@ public class CuentaCorriente extends Cuenta {
 
   public CuentaCorriente(double saldo) {
     super(saldo);
-    this.setDescubierto(0);
   }
 
   public void setDescubierto(double descubierto) {

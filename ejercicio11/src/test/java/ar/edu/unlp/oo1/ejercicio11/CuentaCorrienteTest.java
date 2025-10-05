@@ -18,21 +18,35 @@ public class CuentaCorrienteTest {
   }
 
   @Test
-  public void testDescubierto() {
-    assertEquals(0, cuentaSinDescubierto.getDescubierto());
-    assertEquals(500, cuentaConDescubierto.getDescubierto());
-  }
-
-  @Test
-  public void testGetSaldo(){
-    assertEquals(200,cuentaSinDescubierto.getSaldo());
-    assertEquals(100,cuentaConDescubierto.getSaldo());
-  }
-
-  @Test
   public void puedeExtraer() {
+    assertTrue(cuentaSinDescubierto.puedeExtraer(200));
     assertFalse(cuentaSinDescubierto.puedeExtraer(300));
-    assertTrue(cuentaConDescubierto.puedeExtraer(600)); // Agregado para cubrir el límite
+
+    assertTrue(cuentaConDescubierto.puedeExtraer(600));
+    assertFalse(cuentaConDescubierto.puedeExtraer(700));
+
+    cuentaSinDescubierto.setDescubierto(100);
+    assertTrue(cuentaSinDescubierto.puedeExtraer(300));
+
+    cuentaConDescubierto.setDescubierto(0);
+    assertFalse(cuentaConDescubierto.puedeExtraer(101));
+
+  }
+
+  @Test
+  public void testTrasferirACuenta() {
+    assertTrue(cuentaSinDescubierto.transferirACuenta(200, cuentaConDescubierto));
+    assertFalse(cuentaSinDescubierto.transferirACuenta(201, cuentaConDescubierto));
+    assertTrue(cuentaConDescubierto.transferirACuenta(700, cuentaSinDescubierto));
+    assertFalse(cuentaConDescubierto.transferirACuenta(101, cuentaSinDescubierto));
+  }
+
+  @Test
+  public void testSaldoMinimo() {
+    cuentaSinDescubierto.extraer(200);
+    assertEquals(0, cuentaSinDescubierto.getSaldo());
+    cuentaConDescubierto.extraer(200);
+    assertEquals(-100, cuentaConDescubierto.getSaldo());
   }
 
 }

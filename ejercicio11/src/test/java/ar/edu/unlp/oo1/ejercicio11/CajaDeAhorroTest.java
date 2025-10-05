@@ -10,23 +10,31 @@ import org.junit.jupiter.api.Test;
 public class CajaDeAhorroTest {
 
   private CajaDeAhorro caja;
-
+  private CuentaCorriente cuenta;
 
   @BeforeEach
-  void setUp(){
+  void setUp() {
     caja = new CajaDeAhorro(1000, 0.02);
+    cuenta = new CuentaCorriente(1500);
   }
 
   @Test
-  public void puedeExtraerTest(){
-    caja.depositar(1000);
+  public void testPuedeExtraer() {
     assertTrue(caja.puedeExtraer(960));
     assertFalse(caja.puedeExtraer(1000));
   }
 
   @Test
-  public void depositarTest(){
-    caja.depositar(500);
-    assertEquals(490,caja.getSaldo());
+  public void testDepositar() {
+    caja.depositar(1000);
+    assertEquals(1980, caja.getSaldo());
   }
+
+  @Test
+  public void testTransferirACuenta(){
+    assertTrue(caja.transferirACuenta(980, cuenta));
+    assertFalse(caja.transferirACuenta(1000, cuenta));
+  }
+
+
 }
