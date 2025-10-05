@@ -3,9 +3,13 @@ package ar.edu.unlp.oo1.ejercicio11;
 public abstract class Cuenta {
   private double saldo;
 
-  public Cuenta(double saldo) {
+  public Cuenta() {
     this.saldo = 0;
   };
+
+  public Cuenta(double saldo){
+    this.saldo = saldo;
+  }
 
   public double getSaldo() {
     return this.saldo;

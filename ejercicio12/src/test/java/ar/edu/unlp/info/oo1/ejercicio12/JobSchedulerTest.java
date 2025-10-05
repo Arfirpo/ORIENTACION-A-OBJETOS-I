@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unlp.info.oo1.ejercicio12.JobDescription;
-import ar.edu.unlp.info.oo1.ejercicio12.JobScheduler;
+//import ar.edu.unlp.info.oo1.ejercicio12.JobDescription;
+//import ar.edu.unlp.info.oo1.ejercicio12.JobScheduler;
 
 public class JobSchedulerTest {
     protected JobDescription firstJob;

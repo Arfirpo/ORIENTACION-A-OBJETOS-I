@@ -21,6 +21,10 @@ En este repositorio se almacenaran la consignas y los enunciados resueltos de la
     `"-DinteractiveMode=false"`
   ```
 
+### Comando Powershell asociado al script automatico
+``` proyecto-objetos ```
+
+
 ### Script automatico para powershell
 
 ``` Script para crear un nuevo proyecto Maven
