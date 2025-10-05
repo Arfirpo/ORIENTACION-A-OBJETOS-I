@@ -5,6 +5,11 @@ public class CuentaCorriente extends Cuenta {
 
   public CuentaCorriente(double desc, double saldo) {
     super(saldo);
+    this.setDescubierto(desc);
+  }
+
+  public CuentaCorriente(double saldo) {
+    super(saldo);
     this.setDescubierto(0);
   }
 
@@ -18,7 +23,7 @@ public class CuentaCorriente extends Cuenta {
 
   @Override
   protected boolean puedeExtraer(double monto) {
-    return Math.abs(this.getSaldo() - monto) <= this.descubierto;
+    return monto <= (this.getSaldo() + this.descubierto);
   }
 
 }

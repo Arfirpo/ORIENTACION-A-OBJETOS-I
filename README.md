@@ -3,4 +3,46 @@ En este repositorio se almacenaran la consignas y los enunciados resueltos de la
 
 ## Cuadernillo de actividades  - ultima actualización: 
 
-25 de septiembre de 2025
+2 de octubre de 2025
+
+## Comando para crear proyecto maven con el arquetipo de la catedra:
+
+ - aclaración: debe tenerse instalado maven en la pc y configurar la variable de entorno "MAVEN_HOME".
+
+  Comando maven:  
+
+  ```
+  `mvn archetype:generate `
+    `"-DgroupId=io.github.unlp-oo" `
+    `"-DartifactId=${nombre-del-proyecto-elegido}" `
+    `"-DarchetypeGroupId=io.github.unlp-oo" `
+    `"-DarchetypeArtifactId=archetype" `
+    `"-DarchetypeVersion=1.0.0" `
+    `"-DinteractiveMode=false"`
+  ```
+
+### Script automatico para powershell
+
+``` Script para crear un nuevo proyecto Maven
+#crear-proyecto.ps1 (nombre del archivo/script)
+#Pide todos los datos del desarrollador por teclado
+#Solicitar nombre del proyecto
+ $artifactId = Read-Host "Ingrese el nombre del proyecto (artifactId)"
+
+#Confirmación
+Write-Host "`nCreando proyecto con:"
+Write-Host "Artifact ID: $artifactId"
+
+# --- Ejecutar comando Maven ---
+mvn archetype:generate `
+    "-DgroupId=io.github.unlp-oo" `
+    "-DartifactId=$artifactId" `
+    "-DarchetypeGroupId=io.github.unlp-oo" `
+    "-DarchetypeArtifactId=archetype" `
+    "-DarchetypeVersion=1.0.0" `
+    "-DinteractiveMode=false" `
+
+# --- Mensaje final ---
+Write-Host "`n✅ Proyecto Maven '$artifactId' creado exitosamente."
+```
+
