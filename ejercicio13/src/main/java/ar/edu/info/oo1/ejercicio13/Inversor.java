@@ -10,9 +10,12 @@ public class Inversor {
     this.inversiones = new ArrayList<Inversion>();
   }
 
-  public void agregarInversion(Inversion inv) {
-    if (!this.inversiones.contains(inv))
+  public boolean agregarInversion(Inversion inv) {
+    if (!this.inversiones.contains(inv)){
       this.inversiones.add(inv);
+      return true;
+    }
+    return false;
   }
 
   public void quitarInversion(Inversion inv) {
@@ -23,4 +26,4 @@ public class Inversor {
     return this.inversiones.stream().mapToDouble(inv -> inv.valorActual()).sum();
   }
 
-}
+} 
