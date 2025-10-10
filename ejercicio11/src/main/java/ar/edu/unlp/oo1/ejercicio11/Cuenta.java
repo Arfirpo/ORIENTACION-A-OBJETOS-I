@@ -23,7 +23,7 @@ public abstract class Cuenta {
     if (this.puedeExtraer(monto)) {
       this.extraerSinControlar(monto);
       return true;
-    }
+    } 
     return false;
   }
 

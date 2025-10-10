@@ -15,7 +15,7 @@ public class Accion implements Inversion {
   public void setCant(int cant) {
     this.cant = cant;
   }
-
+ 
   public void setValorUnitario(double valorUnitario) {
     this.valorUnitario = valorUnitario;
   }

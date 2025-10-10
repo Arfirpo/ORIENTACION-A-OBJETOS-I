@@ -20,7 +20,7 @@ public class CajaDeAhorroTest {
 
   @Test
   public void testPuedeExtraer() {
-    assertTrue(caja.puedeExtraer(960));
+    assertTrue(caja.puedeExtraer(960),"fallo porque x");
     assertFalse(caja.puedeExtraer(1000));
   }
 

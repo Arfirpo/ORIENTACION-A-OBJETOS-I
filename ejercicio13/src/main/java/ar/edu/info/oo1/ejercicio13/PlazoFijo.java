@@ -26,7 +26,7 @@ public class PlazoFijo implements Inversion {
   }
 
   public void setinteresAnual(double interesAnual) {
-    this.interesAnual = interesAnual;
+    this.interesAnual = interesAnual; 
   }
 
   public void setFechaConstitucon(LocalDate fechaConstitucon) {
