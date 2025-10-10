@@ -10,8 +10,10 @@ public class ReporteDeConstruccion {
     this.piezas = new ArrayList<Pieza>();
   }
 
-  public double volumenDeMaterial() {
-    return 0.0;
+  public double volumenDeMaterial(String material) {
+    return this.piezas.stream().filter(pz -> {
+      pz.getMaterial().equals(material)
+    }).;
   }
 
   public double superficieDeColor() {

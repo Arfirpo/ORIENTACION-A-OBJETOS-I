@@ -1,11 +1,11 @@
 package ar.edu.info.oo1.ejercicio14;
 
-public class Esfera extends Pieza{
+public class Esfera extends Pieza {
 
   private double radio;
 
-  public Esfera(String mat, String col, double vol, double sup,double rad) {
-    super(mat,col,vol,sup);
+  public Esfera(String mat, String col, double vol, double sup, double rad) {
+    super(mat, col, vol, sup);
     this.setRadio(rad);
   }
 
@@ -16,5 +16,15 @@ public class Esfera extends Pieza{
   public double getRadio() {
     return radio;
   }
-  
+
+  @Override
+  public double calcularVolumen() {
+    return (4 / 3) * Math.PI * Math.pow(this.radio, 3);
+  }
+
+  @Override
+  public double calcularSuperficie() {
+    return 4 * Math.PI * Math.pow(this.radio, 2);
+  }
+
 }
