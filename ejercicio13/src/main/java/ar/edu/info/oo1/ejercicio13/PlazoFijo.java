@@ -47,7 +47,7 @@ public class PlazoFijo implements Inversion {
 
   @Override
   public double valorActual() {
-    int cantDias = Math.toIntExact(ChronoUnit.DAYS.between(this.fechaConstitucon, LocalDate.now())) + 1;
+    int cantDias = Math.toIntExact(ChronoUnit.DAYS.between(this.fechaConstitucon, LocalDate.now()));
 
     return Math.round((this.valorInicial * Math.pow(1 + (this.interesAnual / 365), cantDias) * 100.00)) / 100.00;
   }
