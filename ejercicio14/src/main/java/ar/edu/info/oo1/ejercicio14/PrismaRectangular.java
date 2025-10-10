@@ -4,9 +4,10 @@ public class PrismaRectangular extends Pieza {
 
   private double ladoMayor;
   private double ladoMenor;
+  private double altura;
 
-  public PrismaRectangular(String mat, String col, double vol, double sup, double h, double ladoMax, double ladoMin) {
-    super(mat, col, vol, sup, h);
+  public PrismaRectangular(String mat, String col, double h, double ladoMax, double ladoMin) {
+    super(mat, col);
     this.setLadoMayor(ladoMax);
     this.setLadoMenor(ladoMin);
   }
@@ -27,6 +28,14 @@ public class PrismaRectangular extends Pieza {
     return ladoMenor;
   }
 
+  public void setAltura(double altura) {
+    this.altura = altura;
+  }
+
+  public double getAltura() {
+    return altura;
+  }
+
   @Override
   public double calcularVolumen() {
     return this.ladoMayor * this.ladoMenor * this.getAltura();
@@ -35,6 +44,6 @@ public class PrismaRectangular extends Pieza {
   @Override
   public double calcularSuperficie() {
     return 2 * ((this.ladoMayor * this.ladoMenor)
-        + (this.ladoMayor * this.getAltura() + (this.ladoMenor * this.getAltura())));
+        + (this.ladoMayor * this.altura + (this.ladoMenor * this.altura)));
   }
 }

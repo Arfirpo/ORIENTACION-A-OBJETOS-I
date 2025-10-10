@@ -4,8 +4,8 @@ public class Esfera extends Pieza {
 
   private double radio;
 
-  public Esfera(String mat, String col, double vol, double sup, double rad) {
-    super(mat, col, vol, sup);
+  public Esfera(String mat, String col, double rad) {
+    super(mat, col);
     this.setRadio(rad);
   }
 

@@ -11,16 +11,20 @@ public class ReporteDeConstruccion {
   }
 
   public double volumenDeMaterial(String material) {
-    return this.piezas.stream().filter(pz -> {
-      pz.getMaterial().equals(material)
-    }).;
+    return this.piezas.stream()
+        .filter(pieza -> pieza.getMaterial().equals(material))
+        .mapToDouble(pieza -> pieza.calcularVolumen())
+        .sum();
   }
 
-  public double superficieDeColor() {
-    return 0.0;
+  public double superficieDeColor(String color) {
+    return this.piezas.stream()
+        .filter(pieza -> pieza.getColor().equals(color))
+        .mapToDouble(pieza -> pieza.calcularSuperficie())
+        .sum();
   }
 
   public List<Pieza> getPiezas() {
-    return this.piezas;
+    return this.piezas; 
   }
 }
