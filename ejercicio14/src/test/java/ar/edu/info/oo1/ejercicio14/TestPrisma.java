@@ -23,7 +23,7 @@ public class TestPrisma {
   }
 
   public void testCalcularSuperficie() {
-    assertEquals(31464, prsm1.calcularVolumen(), 0.01);
-    assertEquals(77591.81, prsm2.calcularVolumen(), 0.01);    
+    assertEquals(31464, prsm1.calcularSuperficie(), 0.01);
+    assertEquals(77591.81, prsm2.calcularSuperficie(), 0.01);    
   }
 }

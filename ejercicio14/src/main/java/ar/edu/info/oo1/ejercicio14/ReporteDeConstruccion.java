@@ -25,6 +25,15 @@ public class ReporteDeConstruccion {
   }
 
   public List<Pieza> getPiezas() {
-    return this.piezas; 
+    return this.piezas;
+  }
+
+  public void agregarPieza(Pieza pieza) {
+    if (!this.piezas.contains(pieza))
+      this.piezas.add(pieza);
+  }
+
+  public void eliminarPieza(Pieza pieza) {
+    this.piezas.remove(pieza);
   }
 }
