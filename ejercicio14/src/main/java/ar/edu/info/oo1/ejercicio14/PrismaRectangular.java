@@ -10,6 +10,7 @@ public class PrismaRectangular extends Pieza {
     super(mat, col);
     this.setLadoMayor(ladoMax);
     this.setLadoMenor(ladoMin);
+    this.setAltura(h);
   }
 
   public void setLadoMayor(double ladoMayor) {
@@ -38,7 +39,7 @@ public class PrismaRectangular extends Pieza {
 
   @Override
   public double calcularVolumen() {
-    return this.ladoMayor * this.ladoMenor * this.getAltura();
+    return this.ladoMayor * this.ladoMenor * this.altura;
   }
 
   @Override

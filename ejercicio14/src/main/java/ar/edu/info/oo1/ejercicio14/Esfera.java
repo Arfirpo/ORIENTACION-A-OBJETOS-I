@@ -19,12 +19,13 @@ public class Esfera extends Pieza {
 
   @Override
   public double calcularVolumen() {
-    return (4 / 3) * Math.PI * Math.pow(this.radio, 3);
+    return Math.round(((4.0 / 3.0) * Math.PI * Math.pow(this.radio, 3))*100.0)/100.0;
+
   }
 
   @Override
   public double calcularSuperficie() {
-    return 4 * Math.PI * Math.pow(this.radio, 2);
+    return Math.round((4.0 * Math.PI * Math.pow(this.radio, 2)) * 100.0) / 100.0;
   }
 
 }
