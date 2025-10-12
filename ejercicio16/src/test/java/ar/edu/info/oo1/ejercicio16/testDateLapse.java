@@ -12,12 +12,10 @@ import org.junit.jupiter.api.Test;
 public class testDateLapse {
 
   private DateLapse dl1;
-  private DateLapse dl2;
 
   @BeforeEach
   void setUp() {
     dl1 = new DateLapse(LocalDate.of(2024, 01, 01), LocalDate.of(2024, 12, 31));
-    dl2 = new DateLapse(LocalDate.of(2024, 12, 31), LocalDate.of(2024, 12, 31));
 
   }
 
