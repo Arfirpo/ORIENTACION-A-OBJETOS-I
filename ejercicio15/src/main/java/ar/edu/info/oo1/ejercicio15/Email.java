@@ -22,6 +22,10 @@ public class Email {
     return titulo;
   }
 
+  public void agregarAdjunto(Archivo adj) {
+    this.adjuntos.add(adj);
+  }
+
   public List<Archivo> getAdjuntos() {
     return this.adjuntos;
   }
@@ -32,6 +36,10 @@ public class Email {
 
   public String getCuerpo() {
     return cuerpo;
+  }
+
+  public boolean cumple(String text) {
+    return (this.cuerpo.equals(text)) || (this.titulo.equals(text));
   }
 
   public int calcularTamaño() {

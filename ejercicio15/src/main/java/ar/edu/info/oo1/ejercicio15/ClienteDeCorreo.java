@@ -1,7 +1,6 @@
 package ar.edu.info.oo1.ejercicio15;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ClienteDeCorreo {
@@ -14,19 +13,31 @@ public class ClienteDeCorreo {
     this.carpetas.add(inbox);
   }
 
-  public void recibirEmail(Email unEmail) {
+  public void recibir(Email unEmail) {
     this.inbox.agregarEmail(unEmail);
   }
 
   public Email buscarTexto(String texto) {
-    boolean encontre = false;
-    Email unEmail = null;
-    Iterator<Carpeta> it = this.carpetas.iterator();
-    while (!encontre && it.hasNext()) {
-      if (it.next().getEmail(texto) != null)
-        encontre = true;
-    }
-    return unEmail;
+    return this.carpetas.stream()
+        .map(c -> c.buscarEmail(texto))
+        .findFirst()
+        .orElse(null);
+  }
+
+  public void agregarCarpeta(Carpeta unaCarpeta) {
+    this.carpetas.add(unaCarpeta);
+  }
+
+  public void eliminarCarpeta(Carpeta unaCarpeta) {
+    this.carpetas.add(unaCarpeta);
+  }
+
+  public List<Carpeta> getCarpetas() {
+    return this.carpetas;
+  }
+
+  public Carpeta getInbox() {
+    return inbox;
   }
 
   public int espacioOcupado() {
@@ -35,8 +46,8 @@ public class ClienteDeCorreo {
         .sum();
   }
 
-  public void moverEmail(Email unEmail, String carpeta){
-    
+  public void mover(Email unEmail, Carpeta destino) {
+    destino.agregarEmail(unEmail);
   }
 
 }

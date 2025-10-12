@@ -1,7 +1,6 @@
 package ar.edu.info.oo1.ejercicio15;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Carpeta {
@@ -21,29 +20,24 @@ public class Carpeta {
     return nombre;
   }
 
-  public Email getEmail(String texto) {
-    Email email = null;
-    boolean encontre = false;
-    Iterator<Email> it = this.emails.iterator();
-    while (!encontre && it.hasNext()) {
-      if (it.next().getTitulo().equals(texto) || it.next().getCuerpo().equals(texto)) {
-        email = it.next();
-        encontre = true;
-      }
-    }
-    return email;
-  }
-
   public List<Email> getEmails() {
     return this.emails;
   }
 
+  
   public void agregarEmail(Email unEmail) {
     this.emails.add(unEmail);
   }
 
   public void eliminarEmail(Email unEmail) {
     this.emails.remove(unEmail);
+  }
+
+  public Email buscarEmail(String texto) {
+    return this.emails.stream()
+        .filter(e -> e.cumple(texto))
+        .findFirst()
+        .orElse(null);
   }
 
   public void mover(Email unEmail, Carpeta destino) {
