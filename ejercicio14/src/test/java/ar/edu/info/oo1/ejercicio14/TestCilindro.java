@@ -15,12 +15,17 @@ class TestCilindro {
     cil2 = new Cilindro("metal", "verde", 125.40, 30);
   }
 
-@Test
-public void TestCalcularVolumen() {
+  @Test
+  public void TestCalcularVolumen() {
     assertEquals(235619.45, cil1.calcularVolumen(), 0.01);
     assertEquals(354560.15, cil2.calcularVolumen(), 0.01);
+  }
+
+  @Test
+  public void testCalcularSuperficie() {
     assertEquals(22776.55, cil1.calcularSuperficie(), 0.01);
-    // assertEquals();
-}
+    assertEquals(29292.21, cil2.calcularSuperficie(), 0.01);
+    
+  }
 
 }

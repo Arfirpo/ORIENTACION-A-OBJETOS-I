@@ -22,8 +22,9 @@ public class TestPrisma {
     assertEquals(77591.81, prsm2.calcularVolumen(), 0.01);
   }
 
+  @Test
   public void testCalcularSuperficie() {
-    assertEquals(31464, prsm1.calcularSuperficie(), 0.01);
-    assertEquals(77591.81, prsm2.calcularSuperficie(), 0.01);    
+    assertEquals(6198, prsm1.calcularSuperficie(), 0.01);
+    assertEquals(12559.2, prsm2.calcularSuperficie(), 0.01);
   }
 }

@@ -1,5 +1,7 @@
 package ar.edu.info.oo1.ejercicio14;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,8 +24,6 @@ public class TestReporte {
     esf2 = new Esfera("metal", "rojo", 8.97);
     prsm1 = new PrismaRectangular("madera", "rojo", 28.5, 46, 24);
     prsm2 = new PrismaRectangular("metal", "azul", 40.8, 22.4, 84.9);
-    repo1.agregarPieza(null);
-
     repo1.agregarPieza(cil1);
     repo1.agregarPieza(cil2);
     repo1.agregarPieza(esf1);
@@ -35,12 +35,14 @@ public class TestReporte {
 
   @Test
   public void testVolumenDeMaterial() {
-
+    assertEquals(268371.7, repo1.volumenDeMaterial("madera"));
+    assertEquals(435175.16, repo1.volumenDeMaterial("metal"),0.02);
   }
 
   @Test
   public void testColorDeMaterial() {
-
+    assertEquals(29985.65, repo1.superficieDeColor("rojo"));
+    assertEquals(13131.76, repo1.superficieDeColor("azul"),0.01);
   }
 
 }
