@@ -43,8 +43,4 @@ public class DateLapse {
     return ((otherDate.isEqual(this.from) || otherDate.isAfter(this.from))
         && (otherDate.isEqual(this.to) || otherDate.isBefore(this.to)));
   }
-
-  public boolean overlapse(DateLapse periodo) {
-    return !((this.from.isAfter(periodo.to)) || (this.to.isBefore(periodo.from)));
-  }
 }
