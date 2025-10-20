@@ -3,7 +3,7 @@ En este repositorio se almacenaran la consignas y los enunciados resueltos de la
 
 ## Cuadernillo de actividades  - ultima actualización: 
 
-2 de octubre de 2025
+13 de octubre de 2025
 
 ## Comando para crear proyecto maven con el arquetipo de la catedra:
 
