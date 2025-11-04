@@ -1,0 +1,25 @@
++usuario
+-nombre
+-direccion
+-dni
+-propiedades
+-reservas
+
++inmueble
+-direccion
+-nombreDesc
+-precioPorNoche
+-reservas
+
++reserva
+-fechaIni
+-fechaFin
+-inmueble
+
+
+*estaDisponible(inmueble,fechaIni,fechaFin):boolean   <----- inmueble
+*crearReserva(inmueble,fechaIni,fechaFin):boolean     <----- usuario
+*cancelarReserva()                                    <----- usuario  
+*calcularPrecioReserva():Double                       <----- reserva
+*calcularIngresosPropietario():Double                 <----- usuario
+
