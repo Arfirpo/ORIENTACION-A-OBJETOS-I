@@ -1,0 +1,25 @@
+dominio: plataforma de gestion de reservas (OOBNB)
+
++usuario
+-nombre
+-diereccion
+-dni
+
+
++inmueble
+-diereccion
+-nombre descriptivo
+-precioPorNoche
+
+
++alquiler
+
++reserva
+-fechaIni
+-fechaFin
+
+
+-estaDisponible(this,fechaIni,fechaFin): boolean
+-reservarPropiedad(propiedad,fechaIni,fechaFin)
+-calcularReserva()
+
