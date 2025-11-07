@@ -1,0 +1,21 @@
+sistema
+excursion
+presupuesto
+cliente
+alquiler
+equipo
+Lugar
+
+precio excursion
+costo de traslado
+costo del guia
+valor del seguro
+lista de lugares a visitar
+
+
+costo por dia
+cantida de dias que se alquila
+nombre del equipo
+
+presupuestos contratados previamente
+
