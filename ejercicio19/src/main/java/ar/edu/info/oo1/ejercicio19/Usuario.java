@@ -54,7 +54,7 @@ public class Usuario {
 
   public boolean cancelarReserva(Inmueble inm){
     boolean ok = false;
-    Reserva r = this.reservas.stream().filter(r -> r.getInmueble().equals(inm)).findFirst().;
+    Reserva r = this.reservas.stream().filter(r -> r.getInmueble().equals(inm)).findFirst();
     return ok;
   }
 }
