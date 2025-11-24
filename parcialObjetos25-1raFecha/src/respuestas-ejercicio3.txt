@@ -1,0 +1,4 @@
+a) opcion 1 (A,B,C,D).
+b) opcion 2 (C,D).
+c) opcion 3 ("hola soy B y tambien soy A").
+d) opcion 2 ("hola soy C, saludos).
