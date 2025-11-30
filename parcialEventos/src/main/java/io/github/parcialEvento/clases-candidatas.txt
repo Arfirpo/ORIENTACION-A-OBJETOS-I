@@ -1,0 +1,23 @@
+Clases Candidatas:
++Sistema
++Entrada
++Compra
++Evento
++Usuario
++Evento Presencial
++Evento Virtual
++Lugar del Evento/sede
+
+
+-evento: nombre, fecha, tema principal, precio inscripción, precio remera promocional
+
+-presencial: sede.
+-virtual: monto fijo x remera.
+
+-sede: nombre, precio x dia, cantidad de dias
+
+-usuario: nombre, entradas compradas.
+
+
+
+
