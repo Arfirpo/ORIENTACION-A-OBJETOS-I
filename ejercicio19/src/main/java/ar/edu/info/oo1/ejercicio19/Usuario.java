@@ -52,9 +52,9 @@ public class Usuario {
     return ok;
   }
 
-  public boolean cancelarReserva(Inmueble inm){
+  public boolean cancelarReserva(Inmueble inm) {
     boolean ok = false;
-    Reserva r = this.reservas.stream().filter(r -> r.getInmueble().equals(inm)).findFirst();
+    Reserva res = this.reservas.stream().filter(r -> r.getInmueble().equals(inm)).findFirst().orElse(null);
     return ok;
   }
 }
