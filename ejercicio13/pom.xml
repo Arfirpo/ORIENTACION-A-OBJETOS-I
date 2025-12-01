@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
   <groupId>ar.edu.unlp.oo1</groupId>
-  <artifactId>ejercicio05</artifactId>
-  <version>1.0.0</version>
-  <name>13-¡A implementar inversiones!</name>
+  <artifactId>ejercicio13</artifactId>
+  <version>0</version>
   <packaging>jar</packaging>
-  <description>Ejercicio 13</description>
+  <name>13-¡A implementar Inversores!</name>
+  <description>Este arquetipo es usado para objetos I y II</description>
 
   <licenses>
     <license>
@@ -15,9 +14,9 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
- 
+  
   <properties>
-    <java.version>21</java.version>
+    <java.version>22</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
@@ -38,9 +37,8 @@
       <email>agustin_firpo@outlook.com.ar</email>
     </developer>
   </developers>
-
-
-<build>
+  
+  <build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -59,7 +57,7 @@
 						<configuration>
 							<archive>
 								<manifest>
-									<mainClass>ar.edu.unlp.oo1.Ejercicio13Application</mainClass>
+									<mainClass>ar.edu.unlp.oo1.ejercicio13.Ejercicio13Application</mainClass>
 								</manifest>
 							</archive>
 							<descriptorRefs>
